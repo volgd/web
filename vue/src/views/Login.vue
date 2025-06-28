@@ -5,11 +5,11 @@
       <el-form ref="formRef"  :rules="data.rules" :model="data.form" style="width: 400px">
         <div style="margin-bottom: 30px;font-size: 24px;text-align:center;color: brown;font-weight: bold">欢迎登录eshop</div>
         <el-form-item prop="username">
-          <el-input size="large" v-model="data.form.username" placeholder="请输入你的账号"  prefix-icon="User">
+          <el-input size="large" v-model="data.form.username" placeholder="请输入你的账号" :prefix-icon="User">
           </el-input>
         </el-form-item>
         <el-form-item prop="password">
-          <el-input show-password size="large" v-model="data.form.password" placeholder="请输入你的密码" prefix-icon="Lock">
+          <el-input show-password size="large" v-model="data.form.password" placeholder="请输入你的密码" :prefix-icon="Lock">
           </el-input>
         </el-form-item>
         <div>

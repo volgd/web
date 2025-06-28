@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@ControllerAdvice("com.example.springboot.controller")
+@ControllerAdvice("org.example.springboot.controller")
 public class GlobalExeceptionHandler {
         @ExceptionHandler(Exception.class)
         @ResponseBody                                         //返回json串
