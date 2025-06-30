@@ -1,4 +1,4 @@
-package org.example.springboot.entity;
+package org.example.entity;
 
 import java.sql.Timestamp;
 

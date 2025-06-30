@@ -1,10 +1,11 @@
-package org.example.springboot.service;
+package org.example.service;
 
-import jdk.jshell.spi.ExecutionControl;
-import org.example.springboot.entity.User;
-import org.example.springboot.exception.CustomException;
-import org.example.springboot.mapper.UserMapper;
+import org.example.entity.User;
+import org.example.exception.CustomException;
+import org.example.mapper.UserMapper;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class UserService {
@@ -21,5 +22,9 @@ public class UserService {
             throw new CustomException("500","账号或密码错误");
         }
         return dbuser;
+    }
+
+    public List<User> selectAll() {
+        return userMapper.selectAll();
     }
 }

@@ -1,4 +1,4 @@
-package org.example.springboot.exception;
+package org.example.exception;
 
 public class CustomException extends RuntimeException{
     private String msg;

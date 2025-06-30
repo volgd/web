@@ -1,4 +1,4 @@
-package org.example.springboot.commom;
+package org.example.commom;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

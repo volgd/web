@@ -1,6 +1,4 @@
-package org.example.springboot.commom;
-
-import jdk.dynalink.beans.StaticClass;
+package org.example.commom;
 
 //统一返回包装类
 

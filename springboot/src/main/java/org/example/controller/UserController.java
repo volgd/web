@@ -1,24 +1,29 @@
-package org.example.springboot.controller;
+package org.example.controller;
 
-import org.example.springboot.commom.Result;
-import org.example.springboot.service.UserService;
+import jakarta.annotation.Resource;
+import org.example.commom.Result;
+import org.example.entity.User;
+import org.example.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/user")
 public class UserController {
+    @Resource
     private final UserService userService;
 
     public UserController(UserService userService) {
         this.userService = userService;
     }
 
-//    @GetMapping
-//    public Result selsctAll(){
-//        userService.
-//        return Result.success();
-//    }
+    @GetMapping("/selectAll")
+    public Result selectAll(){
+        List< User > list = userService.selectAll();
+        return Result.success();
+    }
 
 }
