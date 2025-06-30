@@ -1,5 +1,6 @@
 package org.example.service;
 
+import jakarta.annotation.Resource;
 import org.example.entity.User;
 import org.example.exception.CustomException;
 import org.example.mapper.UserMapper;
@@ -10,6 +11,7 @@ import java.util.List;
 @Service
 public class UserService {
     private CustomException customException;
+    @Resource
     private UserMapper userMapper;
     public User login(User user) {
         String username =user.getUsername();

@@ -10,11 +10,11 @@
 <!--        SELECT * FROM user WHERE username = #{username}-->
 
 <!--    </select>-->
-<!--    <select id="selectAll" resultType="org.example.entity.User">-->
+    <select id="selectAll" resultType="org.example.entity.User">
 
-<!--        SELECT * FROM user-->
+        SELECT * FROM user
 
-<!--    </select>-->
+    </select>
 
 
 

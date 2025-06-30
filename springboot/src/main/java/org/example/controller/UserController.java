@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("/user")
 public class UserController {
     @Resource
-    private final UserService userService;
+    private UserService userService;
 
     public UserController(UserService userService) {
         this.userService = userService;
@@ -23,7 +23,7 @@ public class UserController {
     @GetMapping("/selectAll")
     public Result selectAll(){
         List< User > list = userService.selectAll();
-        return Result.success();
+        return Result.success(list);
     }
 
 }
